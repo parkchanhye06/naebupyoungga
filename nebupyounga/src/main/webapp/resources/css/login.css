@@ -1,0 +1,26 @@
+@charset "UTF-8";
+#login{
+	border:1px solid lightgray;
+	width:250px;
+	height:200px;
+
+}
+#signUpBtn{
+	width:200px;
+	margin:0 auto;
+	margin-left:25px;	
+}
+#loginBtn{
+	width:200px;
+	margin:0 auto;
+	margin-left:25px;
+}
+#login > div:nth-child(1){
+	margin-left: 20px;
+    margin-top: 23px;
+	font-size:20px;
+	font-weight:bold;
+}
+#login > div:nth-child(3){
+	margin-left:23px;
+}

@@ -1,0 +1,35 @@
+@charset "UTF-8";
+#main_page{
+		width:1000px;
+		height:750px;
+		border:1px solid lightgray;	
+}
+#titles{
+	width:964px;
+	display:flex;
+	justify-content:space-between;
+	margin-bottom:20px;
+	margin-top:30px;
+	margin-left:10px;
+}
+#main_content {
+	display:flex;
+	margin-left:20px;
+	margin-top:30px;
+	
+}
+#main_content > div > div{
+	margin-left:90px;
+	
+	
+}
+#main_content > div > img{
+	height:355px;
+}
+#adverticement{
+	margin-top:60px;
+	width:964px;
+	display:flex;
+	justify-content:flex-end;	
+	
+}

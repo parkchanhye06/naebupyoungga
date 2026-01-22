@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="MemberMapper">
+	<select id = "login_check" resultType = "com.ch.dto.MemberDto">
+        SELECT id,pw,role,name,point
+		FROM member 
+		WHERE id  =#{id}
+		AND pw = #{pw}
+	</select>
+	<select id = "select_all_member" resultType = "com.ch.dto.MemberDto">
+		SELECT * FROM 
+		member
+	
+	</select>
+	
+	<insert id = "signUpMember">
+	INSERT INTO member
+	VALUES(#{id},#{pw},#{name},1000,'user')
+	
+	</insert>
+	<update id = "but_coding_class">
+	UPDATE member
+	SET point = #{point}
+	WHERE id = #{id}
+	</update>
+	<update id = "idEdit">
+	UPDATE member
+	SET	pw = #{pw}
+	,name = #{name}
+	,point = #{point}
+	WHERE id = #{id}
+	</update>
+	<delete id = "delete_id">
+	DELETE	FROM member
+	WHERE id = #{id}
+	
+	</delete>
+	<update id = "scheduler">
+		UPDATE member 
+		SET point = point + 1
+	
+	</update>
+</mapper>
+

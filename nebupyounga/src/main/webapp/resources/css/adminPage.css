@@ -1,0 +1,20 @@
+.container{
+	border:1px solid lightgrey;
+	width:1000px;
+	height:auto;
+	
+}
+.member-table > tbody > tr > td{
+	border:1px solid lightgrey;
+	padding:10px;	
+	
+	
+}
+.member-table > thead > tr > th{
+	border:1px solid lightgrey;
+	padding:10px;	
+}
+.scheduler-section{
+	margin-bottom:20px;
+	
+}
